@@ -1,47 +1,70 @@
 public class DoubleLinkedList {
     public static void main(String args[]){
-        DLList list = new DLList();
+        DLList dList = new DLList();
 
-        System.out.println(list.isEmpty());
+//        System.out.println(list.isEmpty());
+//
+//        list.addFirst(1, "a");
+//
+//        System.out.println(list.size());
+//
+//        System.out.println(list.get(1));
+//
+//        dList.addLast(2, "b");
+//        dList.addLast(3, "c");
+//        dList.addLast(4, "d");
+//        dList.addLast(5, "e");
+//
+//        System.out.println(dList.size() +"\n");
+//
+//        list.addGivenIndex(2,"p");
+//
+//        System.out.println(dList.size() + "\n");
+//
+//        dList.printList();
+//
+//        dList.remove(1);
+//        System.out.println("\n");
+//
+//        dList.printList();
+//
+//        System.out.println(dList.size() + "\n");
+//
+//
+//        dList.remove(1);
+//        dList.printList();
+//        System.out.println(dList.size() + "\n");
+//
+//        dList.remove(4);
+//        dList.printList();
+//        System.out.println(dList.size() + "\n");
+//
+//        dList.remove(2);
+//        dList.printList();
+//        System.out.println(dList.size() + "\n");
+//
+//        System.out.println(dList.get(1) + "\n");
+//
+//        dList.printList();
 
-        list.add(1, "a");
 
-        System.out.println(list.size());
+        dList.addFirst(1, "a");
+        dList.addLast(2, "b");
+        dList.addLast(3, "c");
+        dList.addLast(4, "d");
+        dList.addLast(5, "e");
 
-        System.out.println(list.get(1));
+//        list.printList();
 
-        list.add(2, "b");
-        list.add(3, "c");
-        list.add(4, "d");
-        list.add(5, "e");
+        dList.addBeforeIndex(5, "Y");
+        dList.addAfterIndex(1,"L");
+        dList.addAfterIndex(8,"T");
+//        System.out.println("\n");
 
-        System.out.println(list.size());
+        dList.printList();
 
-        list.add(2,"p");
-
-        System.out.println(list.size());
-
-        list.printList();
-
-        list.remove(1);
-
-        list.printList();
-        System.out.println(list.size());
-
-        list.remove(1);
-        list.printList();
-        System.out.println(list.size());
-
-        list.remove(4);
-        list.printList();
-        System.out.println(list.size());
-
-        list.remove(2);
-        list.printList();
-        System.out.println(list.size());
-
-        System.out.println(list.get(1));
-
-
+        dList.addBeforeValue("O", "Y");
+        System.out.println("\n");
+        dList.printList();
     }
 }
